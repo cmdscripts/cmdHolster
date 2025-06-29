@@ -23,6 +23,11 @@ set holster:locale de   # oder en
 - `/holster` → Menü zur Holsterwahl öffnen
 - `/getcloth` → Kleidung aktuell anzeigen (für Dev-Zwecke)
 
+### 🛠️ Konfiguration
+- Befehlsnamen lassen sich in `config.lua` unter `Config.Commands` ändern.
+- Die Benachrichtigungen können über `Config.Notify` angepasst werden.
+- Dauerhafte Speicherung des Holsters steuert `Config.PersistHolster`.
+
 ---
 
 ## 🇬🇧 English
@@ -47,3 +52,8 @@ set holster:locale en   # or de
 ### 🕹️ Commands
 - `/holster` → Open holster selection menu
 - `/getcloth` → Print current clothing to F8 console (for developers)
+
+### 🛠️ Configuration
+- Command names can be changed via `Config.Commands` in `config.lua`.
+- The notification function can be overwritten with `Config.Notify`.
+- Set `Config.PersistHolster` to control if holsters are saved permanently.
