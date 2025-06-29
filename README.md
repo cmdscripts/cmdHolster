@@ -6,7 +6,7 @@ Ein einfaches Holster-Auswahlmenü für ESX mit `ox_lib`.
 Du kannst über `/holster` dein Holster wählen (Gürtel, Bein, Schulter) – die Kleidung wird direkt am Ped geändert.
 
 ### 📦 Installation
-1. Ziehe den `HolsterScript`-Ordner in deinen `resources`.
+1. Ziehe den `cmdHolster`-Ordner in deinen `resources`.
 2. In deiner `server.cfg`:
 ```
 ensure HolsterScript
@@ -31,7 +31,7 @@ A simple holster selection menu for ESX using `ox_lib`.
 Use `/holster` to choose a holster style (belt, leg, shoulder) – it changes ped clothing directly.
 
 ### 📦 Installation
-1. Drop the `HolsterScript` folder into your `resources`.
+1. Drop the `cmdHolster` folder into your `resources`.
 2. In your `server.cfg`:
 ```
 ensure HolsterScript
