@@ -29,7 +29,7 @@ local function focusCam(state)
     end
 end
 
-RegisterCommand('holster', function()
+RegisterCommand(Config.Commands.holster, function()
     focusCam(true)
 
     local options = {
@@ -47,17 +47,13 @@ RegisterCommand('holster', function()
         currentHolster = dialog[1]
         TriggerServerEvent('holster:setHolster', currentHolster)
         applyHolster(currentHolster)
-        lib.notify({
-            title = 'Holster',
-            description = Config.Texts.setHolster,
-            type = 'success'
-        })
+        Config.Notify(Config.Texts.setHolster)
     end
 
     focusCam(false)
 end, false)
 
-RegisterCommand('getcloth', function()
+RegisterCommand(Config.Commands.debug, function()
     local ped = PlayerPedId()
     print('----------------------------------')
 

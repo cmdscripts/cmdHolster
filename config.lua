@@ -1,6 +1,25 @@
 local Config = {}
 
-local locale = GetConvar("holster:locale", "de")
+local locale = GetConvar('holster:locale', 'de')
+
+-- name of the commands players can use
+Config.Commands = {
+    holster = 'holster',
+    debug   = 'getcloth'
+}
+
+-- whether to save holster selections in ox_inventory metadata
+Config.PersistHolster = true
+
+-- wrapper used for notifications
+Config.NotifyTitle = 'Holster'
+Config.Notify = function(text)
+    lib.notify({
+        title       = Config.NotifyTitle,
+        description = text,
+        type        = 'success'
+    })
+end
 
 Config.Locales = {
     de = {
